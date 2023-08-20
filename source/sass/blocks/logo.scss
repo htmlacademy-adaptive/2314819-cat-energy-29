@@ -1,0 +1,37 @@
+.logo {
+  transition: opacity 0.1s ease-in-out;
+
+  &:not(.logo--footer) {
+    display: grid;
+    grid-template-columns: 34px 1fr;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &:link:hover {
+    opacity: 0.8;
+  }
+
+  &:link:active {
+    opacity: 0.6;
+  }
+
+  img {
+    display: block;
+  }
+}
+
+.logo--footer {
+  display: flex;
+  align-items: center;
+
+  @media (max-width: $breakpoint-small-down) {
+    padding: 8px;
+
+    justify-content: center;
+  }
+}
+
+.logo__sign {
+  justify-self: center;
+}
