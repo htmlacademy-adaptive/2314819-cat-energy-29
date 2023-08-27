@@ -58,9 +58,10 @@
 
   text-decoration: none;
 
+  transition: opacity 0.2s ease-in-out;
+
   @media (min-width: $breakpoint-medium) {
     padding: 17px;
-    transition: opacity 0.1s ease-in-out;
   }
 
   &:link:hover {

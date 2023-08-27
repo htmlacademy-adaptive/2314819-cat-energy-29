@@ -221,12 +221,11 @@
     background-repeat: no-repeat;
     background-position: 100% 50%;
     background-image: url("../img/icons/arrow.svg");
-
-    transition: width 0.2s ease-in-out;
   }
 
   &:hover {
     &::after {
+      transition: width 0.2s ease-in-out;
       width: 32px;
     }
   }

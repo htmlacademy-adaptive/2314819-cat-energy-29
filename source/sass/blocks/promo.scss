@@ -11,6 +11,13 @@
     background-image:
       url("../img/background/promo-small.jpg"),
       linear-gradient($color-primary-800 0, $color-primary-800 302px, $color-white 302px);
+
+    @media (min-resolution: 2dppx) {
+      background-size: auto 302px, auto;
+      background-image:
+        url("../img/background/promo-small@2x.jpg"),
+        linear-gradient($color-primary-800 0, $color-primary-800 302px, $color-white 302px);
+    }
   }
 
   @media (min-width: $breakpoint-medium) {
@@ -36,6 +43,11 @@
       background-position: 0 100%;
       background-repeat: no-repeat;
       background-image: url("../img/background/promo-large.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-size: auto 696px;
+        background-image: url("../img/background/promo-large@2x.jpg");
+      }
     }
   }
 }
@@ -56,6 +68,7 @@
 .promo__heading {
   margin: 0;
   margin-bottom: 25px;
+  max-width: 605px;
 
   font-family: $font-heading;
   font-size: 36px;
@@ -66,6 +79,12 @@
     margin-bottom: 41px;
 
     font-size: 60px;
+  }
+
+  @media (max-width: $breakpoint-small-down) {
+    max-width: 405px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 

@@ -6,29 +6,23 @@
   }
 
   @media (min-width: $breakpoint-medium) {
-    width: 708px;
     margin: 0 auto;
     padding: 24px 0;
     display: grid;
-    grid-template-columns: 174px 1fr;
+    grid-template-columns: max-content 1fr;
     gap: 16px;
-  }
-
-  @media (min-width: $breakpoint-large) {
-    width: 1220px;
   }
 }
 
 .page-header__nav--main {
   @media (min-width: $breakpoint-large) {
-    grid-template-columns: 174px 50%;
+    grid-template-columns: max-content 50%;
     justify-content: space-between;
   }
 }
 
 .page-header__bar {
   @media (max-width: $breakpoint-small-down) {
-    width: 320px;
     margin: 0 auto;
     padding: 12px 20px 13px;
     display: grid;

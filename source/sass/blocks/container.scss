@@ -1,13 +1,13 @@
 .container {
-  width: 280px;
+  width: 87.5%;
   margin-right: auto;
   margin-left: auto;
 
   @media (min-width: $breakpoint-medium) {
-    width: 708px;
+    width: 92%;
   }
 
   @media (min-width: $breakpoint-large) {
-    width: 1220px;
+    width: 85%;
   }
 }
