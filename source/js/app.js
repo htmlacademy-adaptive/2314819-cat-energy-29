@@ -2,8 +2,9 @@ const navElement = document.querySelector('.page-header__nav');
 const buttonElement = document.querySelector('.page-header__toggler');
 
 
-// Menu-burger
+// Menu Burger
 
+// burger opened default
 navElement.classList.add('page-header__nav--closed');
 
 buttonElement.addEventListener('click', () => {

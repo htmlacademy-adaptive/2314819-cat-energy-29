@@ -5,13 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Кэт энерджи: Подбор программы</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./favicon.ico">
+    <link rel="icon" href="./img/favicon/32.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="./img/favicon/180.png">
+    <link rel="manifest" href="./manifest.webmanifest">
   </head>
   <body class="page__body">
-    <header class="page__header page-header">
+    <header class="page__header page-header page-header__container container">
       <nav class="page-header__nav">
         <div class="page-header__bar">
           <a class="page-header__logo logo" href="./index.html">
-            <img class="logo__image" src="./img/logo-image.svg" width="34" height="38" alt="Cat Energy">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="./img/logo-image-large.svg">
+              <source media="(min-width: 768px)" srcset="./img/logo-image-medium.svg">
+              <img class="logo__image" src="./img/logo-image-small.svg" width="34" height="38" alt="Cat Energy">
+            </picture>
             <img class="logo__sign" src="./img/logo-sign.svg" width="101" height="19" alt="" aria-hidden="true">
           </a>
 
@@ -224,7 +232,7 @@
           </li>
         </ul>
 
-        <a class="page-footer__developer developer" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+        <a class="page-footer__developer developer" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="visually-hidden">Разработано в</span>
           HTML Academy
           <svg class="developer__image" width="27" height="34" viewBox="0 0 27 34">

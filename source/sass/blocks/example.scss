@@ -173,3 +173,43 @@
     }
   }
 }
+
+.example__images {
+  margin-bottom: 15px;
+
+  @media (min-width: $breakpoint-medium) {
+    display: grid;
+    grid-template-columns: 50% 1fr;
+    padding: 0 58px;
+    overflow: hidden;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    padding: 0;
+  }
+}
+
+.example__image {
+  display: none;
+
+  @media (min-width: $breakpoint-medium) {
+    display: flex;
+    overflow: hidden;
+
+    img {
+      width: 594px;
+      height: 511px;
+      max-width: none;
+    }
+  }
+}
+
+.example__image--after {
+  @media (min-width: $breakpoint-medium) {
+    justify-content: end;
+  }
+}
+
+.example__image--active {
+  display: block;
+}
